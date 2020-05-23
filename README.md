@@ -1,5 +1,5 @@
 ## BE THE HERO
-![enter image description here](https://github.com/HBeserra/OmniStack-11/raw/master/logo.png)
+![enter image description here](https://github.com/bonfimjustino7/bethehero/blob/master/src/assets/logo.svg)
 
 
 Front-end criando em react JS como ensinado na Semana OmniStack 11 pelo Diego Fernandes, com alguns ajustes a mais como: 
