@@ -1,5 +1,5 @@
 ## BE THE HERO
-![enter image description here](https://github.com/bonfimjustino7/bethehero/blob/master/src/assets/logo.svg) 
+![enter image description here](https://github.com/bonfimjustino7/bethehero/blob/master/frontend/src/assets/logo.svg) 
 ![enter image description here](https://miro.medium.com/max/600/1*N5Iep1wJY1iXgMzpHxzE8w.png)
 
 
