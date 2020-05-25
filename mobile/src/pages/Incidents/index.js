@@ -7,7 +7,6 @@ import styles from './styles';
 
 export default function Incidents() {
 
-
     const navigation = useNavigation();
 
     function navigateToDetail() {
