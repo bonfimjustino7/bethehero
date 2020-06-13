@@ -18,13 +18,8 @@ export default function NewIncidents() {
     const history = useHistory();
 
     useEffect(() => {
-
-        if (localStorage.getItem('id') && localStorage.getItem('token')) {
-            setOng(localStorage.getItem('id'));
-            setToken(localStorage.getItem('token'));
-
-        } else history.push('/');
-
+        setOng(localStorage.getItem('id'));
+        setToken(localStorage.getItem('token'));
     }, [])
 
     async function handlerNewIncident(e) {

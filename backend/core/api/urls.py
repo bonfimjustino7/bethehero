@@ -5,6 +5,7 @@ from core.api import views
 router = routers.DefaultRouter()
 router.register(r'incidents', views.IncidentsViewSet)
 router.register(r'ongs', views.OngsViewSet)
+router.register(r'products', views.ProductViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

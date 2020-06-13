@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from core.models import Ongs, Incidents
+from core.models import Ongs, Incidents, Product
 
 
 class OngsSerializer(serializers.ModelSerializer):
@@ -13,6 +13,12 @@ class IncidentsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Incidents
         fields = ['id', 'title', 'description', 'value', 'ong']
+
+
+class ProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ['id', 'name', 'price',]
 
 
 class SessionSerializer(serializers.Serializer):

@@ -8,8 +8,8 @@ from rest_framework.permissions import IsAuthenticated, DjangoModelPermissions
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from core.api.serializers import OngsSerializer, IncidentsSerializer, SessionSerializer
-from core.models import Ongs, Incidents
+from core.api.serializers import OngsSerializer, IncidentsSerializer, SessionSerializer, ProductSerializer
+from core.models import Ongs, Incidents, Product
 from rest_framework.authentication import TokenAuthentication
 
 class OngsViewSet(viewsets.ModelViewSet):
@@ -32,6 +32,12 @@ class OngsViewSet(viewsets.ModelViewSet):
         ong = Ongs.objects.create(**data)
 
         return JsonResponse({'id': ong.id}, status=status.HTTP_201_CREATED)
+
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
 
 class IncidentsViewSet(viewsets.ModelViewSet):
     """

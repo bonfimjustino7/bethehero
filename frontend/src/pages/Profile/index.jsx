@@ -11,17 +11,9 @@ export default function Profile() {
 
     const history = useHistory();
 
-    let name_ong = '';
-    let token = '';
-    let id = '';
-
-    if (localStorage.getItem('name') && localStorage.getItem('token') && localStorage.getItem('id')) {
-        name_ong = localStorage.getItem('name');
-        token = localStorage.getItem('token');
-        id = localStorage.getItem('id');
-    } else {
-        history.push('/');
-    }
+    const name_ong = localStorage.getItem('name');
+    const token = localStorage.getItem('token');
+    const id = localStorage.getItem('id');
 
     const [cases, setCase] = useState([]);
 
