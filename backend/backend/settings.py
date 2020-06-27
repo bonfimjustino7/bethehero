@@ -33,7 +33,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://127.0.0.1:9000",
     "http://127.0.0.1",
-    "http://http://betheheros.medicaronline.xyz/",
+    "http://betheheros.medicaronline.xyz",
     "http://35.247.246.67",
     "http://localhost:4200",
 ]
